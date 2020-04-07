@@ -15,5 +15,7 @@
 
         <mapping resource="Cart.hbm.xml" />
         <mapping resource="Item.hbm.xml" />
+        <mapping class="MyHExample.oneToMany.Comment"/>
+        <mapping class="MyHExample.oneToMany.Post"/>
     </session-factory>
 </hibernate-configuration>
