@@ -1,7 +1,5 @@
 package MyHExample.oneToMany;
 
-import MyHExample.manytomany.Cart;
-import MyHExample.manytomany.Item;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -57,8 +55,12 @@ public class oneToManyApp
 
         System.out.println(postFromDb.getComments().contains(comment3));
 
+        Comment commentFromDb2 = session.find(Comment.class, 3);
+
+        System.out.println(commentFromDb2.getAuthorName());
+
         transaction.commit();
-//        session.close();
+        session.close();
 
 
 
