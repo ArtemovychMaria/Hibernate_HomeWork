@@ -1,4 +1,4 @@
-package MyHExample;
+package MyHExample.manytomany;
 
 import java.util.Set;
 
